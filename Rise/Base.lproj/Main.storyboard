@@ -107,7 +107,7 @@
         <!--Meditation View Controller-->
         <scene sceneID="upw-gI-DwZ">
             <objects>
-                <viewController id="mxU-4x-Jlz" customClass="MeditationViewController" customModule="Rise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MeditationViewController" id="mxU-4x-Jlz" customClass="MeditationViewController" customModule="Rise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ARp-wT-LT2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,12 +131,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="goBackHomeButton:" destination="mxU-4x-Jlz" eventType="touchUpInside" id="cWp-Pg-NQW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cBx-t5-W4W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="countLabel" destination="mY5-SD-dke" id="aKb-jl-6v9"/>
                         <outlet property="meditationLabel" destination="yLE-Oi-stx" id="2eK-Yr-Ru3"/>
                     </connections>
                 </viewController>
@@ -162,7 +166,7 @@
         <!--Back Home View Controller-->
         <scene sceneID="8L1-7V-9SD">
             <objects>
-                <viewController id="7zY-Bh-TqZ" customClass="BackHomeViewController" customModule="Rise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BackHomeViewController" id="7zY-Bh-TqZ" customClass="BackHomeViewController" customModule="Rise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IYH-bE-jN1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -64,19 +64,27 @@
 		B17412002B0C5970005B90F1 /* Rise */ = {
 			isa = PBXGroup;
 			children = (
+				B1BE49F82B0C7D9300C3BE38 /* View */,
 				B17412012B0C5970005B90F1 /* AppDelegate.swift */,
 				B17412032B0C5970005B90F1 /* SceneDelegate.swift */,
-				B17412052B0C5970005B90F1 /* ViewController.swift */,
 				B17412072B0C5970005B90F1 /* Main.storyboard */,
 				B174120A2B0C5970005B90F1 /* Assets.xcassets */,
 				B174120C2B0C5970005B90F1 /* LaunchScreen.storyboard */,
 				B174120F2B0C5970005B90F1 /* Info.plist */,
+			);
+			path = Rise;
+			sourceTree = "<group>";
+		};
+		B1BE49F82B0C7D9300C3BE38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B17412052B0C5970005B90F1 /* ViewController.swift */,
 				B17412152B0C5BB9005B90F1 /* FirstViewController.swift */,
 				B17412172B0C5BDD005B90F1 /* TodoViewController.swift */,
 				B17412192B0C5C0A005B90F1 /* MeditationViewController.swift */,
 				B174121B2B0C5C26005B90F1 /* BackHomeViewController.swift */,
 			);
-			path = Rise;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
