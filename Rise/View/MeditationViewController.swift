@@ -12,6 +12,7 @@ class MeditationViewController: UIViewController {
 
     @IBOutlet weak var meditationLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var goBackHomeButton: UIButton!
     
     var timer: Timer?
     var initialCountdownSeconds = 5  // 初期カウントダウン（5秒）
@@ -19,39 +20,25 @@ class MeditationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        countLabel.text = "6"
+        countLabel.text = "5"
         startInitialCountdown()
-
+        countLabel.layer.cornerRadius = 100
+        countLabel.clipsToBounds = true
+        goBackHomeButton.layer.cornerRadius = 20
     }
     
-    
 
-    @IBAction func goBackHomeButton(_ sender: Any) {
+    @IBAction func goBackHomeButtonTapped(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "BackHomeViewController") as? BackHomeViewController else {
             return
         }
 
-        // 白いビューを作成
-        let whiteView = UIView(frame: UIScreen.main.bounds)
-        whiteView.backgroundColor = .white
-        whiteView.alpha = 0  // 初期状態では透明に設定
-        view.window?.addSubview(whiteView)
-
-        // フェードアウトアニメーション
-        UIView.animate(withDuration: 0.25, animations: {
-            whiteView.alpha = 1  // 白いビューを完全に不透明にする
-        }) { _ in
-            // 0.5秒待機
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                // フェードインアニメーション
-                UIView.transition(with: self.view.window!, duration: 0.25, options: .transitionCrossDissolve, animations: {
-                    self.view.window?.rootViewController = nextViewController
-                }) { _ in
-                    // 白いビューを削除
-                    whiteView.removeFromSuperview()
-                }
-            }
+        // 0.5秒後に画面遷移を実行
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            UIView.transition(with: self.view.window!, duration: 0.3, options: .transitionCrossDissolve, animations: {
+                self.view.window?.rootViewController = nextViewController
+            }, completion: nil)
         }
     }
     

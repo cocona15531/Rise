@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B14432382B0CC2B5004EA585 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14432372B0CC2B5004EA585 /* NotificationViewController.swift */; };
 		B17412022B0C5970005B90F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17412012B0C5970005B90F1 /* AppDelegate.swift */; };
 		B17412042B0C5970005B90F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17412032B0C5970005B90F1 /* SceneDelegate.swift */; };
 		B17412062B0C5970005B90F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17412052B0C5970005B90F1 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B14432372B0CC2B5004EA585 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		B17411FE2B0C5970005B90F1 /* Rise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17412012B0C5970005B90F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B17412032B0C5970005B90F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				B17412172B0C5BDD005B90F1 /* TodoViewController.swift */,
 				B17412192B0C5C0A005B90F1 /* MeditationViewController.swift */,
 				B174121B2B0C5C26005B90F1 /* BackHomeViewController.swift */,
+				B14432372B0CC2B5004EA585 /* NotificationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				B17412182B0C5BDD005B90F1 /* TodoViewController.swift in Sources */,
 				B174121C2B0C5C26005B90F1 /* BackHomeViewController.swift in Sources */,
+				B14432382B0CC2B5004EA585 /* NotificationViewController.swift in Sources */,
 				B17412062B0C5970005B90F1 /* ViewController.swift in Sources */,
 				B17412022B0C5970005B90F1 /* AppDelegate.swift in Sources */,
 				B17412042B0C5970005B90F1 /* SceneDelegate.swift in Sources */,
